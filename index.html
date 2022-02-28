@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./resources/favicon.ico" type="image/x-icon">
+  <link rel = "stylesheet" href = "./resources/styles.css">
+  <script type = "text/javascript" src = "resources/javascript.js"></script>
+  <title>Custom Milk Floats</title>
+</head>
+<body>
+  <header id = "navbar">
+    <div class = "logoContainer flex">
+      <div class = "marginRight">
+        <a href = "#index">
+          <div id = "logo">
+            <h2>Custom Milk Floats</h2>
+          </div>
+        </a>
+      </div>
+      <nav class = "flex">
+        <ul>
+          <li>
+            <a href = "#about">About</a>
+          </li>
+          <li>
+            <a href = "#gallery">Gallery</a>
+          </li>
+          <li>
+            <a href = "#team">Team</a>
+          </li>
+          <li>
+            <a href = "#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section id = "hero" class = "flex fullscreen">
+      <h1 class = "titleShadow">Mike Oat's Custom Milk Floats</h1>
+      <h3 class = "subtitleShadow">Turning your Milk Float designs into reality.</h3>
+    </section>
+    <section id = "about" class = "flex fullscreen">
+      <h2 class = "titleShadow">About Us</h2>
+      <p class = "subtitleShadow">We have been making custom vehicles for over 50 years. We take old unwanted milk floats and give them a new lease of life. Check out some of our custom jobs below.</p>
+    </section>
+    <section id = "gallery" >
+      <h2 class = "titlePadding">Check out some of our work.</h2>
+      <div class = "container flex autoMargin">
+        <figure class = "customJob">
+          <img id = "dragRace" src = "resources/images/dragRace.jpeg" alt = "Custom Milk float">
+          <figcaption>This Milk Float was built in... for ...</figcaption>
+        </figure>
+        <figure class = "customJob">
+          <img id = "electricBlue" src = "resources/images/electricBlue.jpg" alt = "Custom Milk float">
+          <figcaption>This Milk Float was built in... for ...</figcaption>
+        </figure>
+        <figure class = "customJob">
+          <img src = "resources/images/hotCarFrontCover.jpg" alt = "Custom Milk float">
+          <figcaption>This Milk Float was built in... for ... It was featured on the front cover of...</figcaption>
+        </figure>
+        <figure class = "customJob">
+          <img id = "budweiser" src = "resources/images/milkFloatBudweiser.jpg" alt = "Custom Milk float">
+          <figcaption>This Milk Float was built in... for ...</figcaption>
+        </figure>
+        <figure class = "customJob">
+          <img id = "redBull" src = "resources/images/redBullMilkFloat.jpg" alt = "Custom Milk float">
+          <figcaption>This Milk Float was built in... for ...</figcaption>
+        </figure>
+      </div>
+    </section>
+    <section id = "team" class = " flex">
+      <h2 class = "titlePadding">Meet the Team</h2>
+      <div class = "container flex">
+        <figure class = "teamMember">
+          <img src = "resources/images/team/meetMike.jpg" alt = "Mike">
+          <figcaption>
+            <h3>Mike Oat</h3>
+            <p>Mike founded the company way back in 1970. He started it in his freetime in his garage but since then he quit his job at a local garage to focus on making milk floats fulltime.</p>
+          </figcaption>
+        </figure>
+        <figure class = "teamMember">
+          <img src = "resources/images/team/meetDave.jpg" alt = "Dave">
+          <figcaption>
+            <h3>Dave Fields</h3>
+            <p>Dave started in 2005, he's the second in command. Recently he's started to run his own projects. The first one was the red bull float above.</p>
+          </figcaption>
+        </figure>
+        <figure class = "teamMember">
+          <img src = "resources/images/team/meetSally.jpg" alt = "Sally">
+          <figcaption>
+            <h3>Sally Hayes</h3>
+            <p>Sally is the newest member of the team and has proved herself to be a valuable asset to the garage. </p>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+    <section id = "contact" class = "flex">
+      <h2 class = "titlePadding">Feel inspired?</h2>
+      <p>Call us on 0123456789 or fill out the form below and we'll get in touch with you as soon as possible.</p>
+      <form class="flex" id="surveyForm">
+        <div class="formGroup">
+          <label id="nameLabel" for "name">Name</label>
+          <input
+          type="text"
+          name="name"
+          id="name"
+          class="form-control"
+          placeholder="Enter your name here"
+          required
+          />
+        </div>
+        <div class="formGroup">
+          <label id="emailLabel" for "email">Email</label>
+          <input
+          type="email"
+          name="email"
+          id="email"
+          class="form-control"
+          placeholder="Enter your email address here"
+          required
+          />
+        </div>
+        <div class="formGroup">
+          <p>What did you have in mind?</p>
+          <textarea 
+          id = "comment"
+          name = "comment"
+          type = "text"
+          placeholder = "Enter your enquiry here and we'll get back to you ASAP!"></textarea>
+        </div>
+        <div class="formGroup">
+          <button
+          type="submit"
+          id="submit">
+            Submit
+          </button>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer>
+    Copywrite &copy; Mike Oat 2022.
+  </footer>
+</body>
+</html>

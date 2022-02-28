@@ -1,0 +1,481 @@
+/*General style*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Parisienne&family=Praise&family=Roboto:ital,wght@0,300;0,400;0,700;1,400&family=Holtwood+One+SC&display=swap&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 24px;
+  height: 100%;
+  --light-blue: rgb(127,166,204);
+  --dark-blue: rgba(33,59,87, 0.95);
+  --gray: rgb(103,103,87);
+  --orange: rgb(173,80,69);
+  --brown: rgb(100,65,51);
+
+}
+
+body {
+  font-family: 'Noto Serif', Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 400;
+  text-align: center;
+  color: whitesmoke;
+}
+
+
+main {
+  padding-top: 45px;
+  background-color: var(--dark-blue);
+}
+
+
+ol, ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2,
+h3 {
+  font-weight: 700;
+}
+
+h1 {
+  font-family: 'Holtwood One SC', 'Brush Script MT', 'Brush Script Std', cursive;
+  letter-spacing: .2rem;
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  text-shadow: 2px 2px 2px var(--brown), 0 0 1em var(--brown), 0 0 0.2em var(--brown);
+
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.fullscreen {
+  width: 100%;
+  height: 100vmin;
+}
+.titlePadding {
+  padding: 30px 0;
+}
+.titleShadow {
+  text-shadow: 5px 5px 2px var(--brown);
+}
+
+.subtitleShadow {
+  text-shadow: 2px 2px 2px var(--brown), 0 0 1em var(--brown), 0 0 0.2em var(--brown);
+}
+.centerAlign {
+  text-align: center;
+}
+.autoMargin {
+  margin: auto;
+}
+
+.container {
+  max-width: 2000px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  gap: 40px;
+}
+
+figure {
+  padding: 0 15px;
+}
+figcaption {
+  padding-top: 10px;
+}
+figure img{
+  object-fit: cover;
+}
+
+/* header */
+
+header {
+  background-color: var(--dark-blue);
+  width: 100%;
+  height: 80px;
+  z-index: 1000;
+  position: fixed;
+  overflow: hidden;
+}
+
+#navbar {
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1)
+}
+
+.logoContainer {
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.marginRight {
+  margin-right: auto;
+}
+#logo {
+  margin-right: auto;
+  background-image: url(./images/CMFlogo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 80px;
+  width: auto;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+#logo h2 {
+  font-family: 'Parisienne', 'Brush Script MT', 'Brush Script Std', cursive;
+  font-weight: 400;
+  color: white;
+}
+nav {
+  height: 100%;
+}
+nav ul {
+  height: 100%;
+  display: inline-flex;
+}
+
+header li {
+  
+  text-align: center;
+}
+
+header li a {
+  display: inline-block;
+  padding: 0.5rem 22px;
+  height: 100%;
+  font-family:  'Praise', 'Brush Script MT', 'Brush Script Std', cursive;
+  color: var(--orange);
+  font-size: 2rem;
+  margin: auto;
+  transition: 0.1s
+}
+
+header li a:hover {
+  background-color: var(--light-blue);
+}
+
+/* welcome */
+
+#hero {
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(./images/backgroundSpanners.jpg);
+  background-size: cover;
+  background-position: top center;
+}
+
+/* about */
+
+#about {
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(./images/customMilkFloat.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* gallery */
+
+#gallery {
+  margin-bottom: 30px;
+}
+
+#electricBlue {
+  object-position: 75% 25%;
+}
+#budweiser {
+  object-position: 0 100%;
+}
+
+#redBull {
+  object-position: 65% 35%;
+}
+
+.customJob {
+  width: 400px;
+  height: auto;
+}
+
+.customJob img {
+  width: 400px;
+  height: 400px;
+}
+
+/* team */
+#team {
+  background-color: var(--orange);
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+.teamMember {
+  width: 300px;
+  height: auto;
+}
+.teamMember img {
+  width: 300px;
+  height: 300px;
+}
+
+/* contact */
+#surveyForm {
+  width: 80%;
+  margin: 0 auto;
+}
+#contact {
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+
+#contact p {
+  padding: 0 40px;
+}
+
+#contact h2 {
+  margin-top: 40px;
+}
+#contact form {
+  margin-top: 20px;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-control {
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+}
+::placeholder {
+  font-family: 'Noto Serif', Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  color: black;
+  font-size: 15px;
+}
+
+#comment {
+ width: 100%;
+ height: 200px;
+ resize: none;
+}
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1D1;
+  color: #fff;
+  text-shadow: 1px 1px black;
+  border: 2px solid #12dd23;
+  width: 100%;
+  height: 50px;
+  font-size: 1.5rem;
+}
+
+button:hover {
+  background-color: #0c960c;
+  border: darkgreen;
+  transition: background-color .15s, font-size .15s;
+  font-size: 1.7rem;
+}
+
+button:active {
+  border-color: #fff;
+}
+
+/* footer */
+footer {
+  background-color: var(--dark-blue);
+  padding: 30px 5px;
+  font-size: .7rem;
+  text-align: right;
+}
+
+@media only screen and (max-width: 1032px) {
+  /* general */
+  html {
+    font-size: 18px;
+  }
+  
+  .container {
+    gap: 20px;
+  }
+
+  /*header */
+
+  header li a {
+    padding: 1rem 22px;
+  }
+  
+  /* gallery */
+
+  .customJob {
+    width: 300px;
+  }
+  .customJob img {
+    width: 300px;
+    height: 300px;
+  }
+
+  /* team */
+
+  .teamMember {
+    width: 250px;
+    height: auto;
+  }
+  .teamMember img {
+    width: 250px;
+    height: 250px;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  /* header */
+  html {
+    font-size: 14px;
+  }
+  header li a {
+    padding: 1.7rem 11px;
+  }
+
+  /* gallery */
+
+  .customJob {
+    width: 215px;
+  }
+  .customJob img {
+    width: 200px;
+    height: 200px;
+  }
+
+  /* team */
+
+  .teamMember {
+    width: 200px;
+    height: auto;
+  }
+  .teamMember img {
+    width: 150px;
+    height: 150px;
+  }
+
+}
+
+@media only screen and (max-width: 464px) {
+
+  html {
+    font-size: 14px;
+  }
+
+  /* header */
+
+  #navbar {
+    height: 200px
+  }
+  header li a {
+    padding: 0;
+  }
+
+  .logoContainer {
+    display: inline;
+  }
+
+  #logo {
+    justify-content: center;
+  }
+  nav ul {
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  nav li{
+    width: 100%;
+    height: 2rem;
+  }
+
+  nav li a {
+    width: 100%;
+    height: auto;
+    background-color: var(--light-blue);
+    transition: 0.1s;
+  }
+
+  nav li a:hover {
+    background-color: var(--dark-blue);
+  }
+
+  /* hero */
+
+  main {
+    padding-top: 190px;
+  }
+
+  /* gallery */
+
+  .customJob {
+    width: 100%;
+  }
+  .customJob img {
+    width: 300px;
+    height: 300px;
+  }
+
+  /* team */
+
+  .teamMember {
+    width: 200px;
+    height: auto;
+  }
+  .teamMember img {
+    width: 150px;
+    height: 150px;
+  }
+
+}
+
+@media only screen and (max-width: 360px) {
+
+  /* gallery */
+
+  .customJob {
+    width: 100%;
+  }
+  .customJob img {
+    width: 250px;
+    height: 250px;
+  }
+
+  /* team */
+
+  .teamMember {
+    width: 100%;
+    height: auto;
+  }
+  .teamMember img {
+    width: 250px;
+    height: 250px;
+  }
+
+}
