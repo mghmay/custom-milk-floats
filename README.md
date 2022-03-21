@@ -1,4 +1,4 @@
-# Mike Oats Custom Milk Floats
+# Mike Oat's Custom Milk Floats
 
 > Like a true nature's child, I was born, born to be wild - Mike Oat
 
