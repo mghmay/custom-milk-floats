@@ -196,6 +196,11 @@ header li a:hover {
   background-position: center;
 }
 
+#about p{
+  width: 60%;
+  margin: 0 auto;
+}
+
 /* gallery */
 
 #gallery {
